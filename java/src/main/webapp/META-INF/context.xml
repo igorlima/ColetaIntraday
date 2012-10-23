@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The contents of this file will be loaded for each web application
+-->
+<Context displayName="coletaintraday" 
+         docBase="coletaintraday" 
+         path="/coletaintraday" 
+         privileged="true" swallowOutput="off">
+
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+	<Realm className="org.apache.catalina.realm.JDBCRealm" debug="99"
+            driverName="com.mysql.jdbc.Driver"
+            connectionURL="jdbc:mysql://69.46.75.189:3306/security"
+            connectionName="security"
+            connectionPassword="im123654"
+            userTable="users" userNameCol="user_name" userCredCol="user_pass" 
+            userRoleTable="user_roles" roleNameCol="role_name" />
+
+</Context>

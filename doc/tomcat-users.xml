@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+<role rolename="INTRADAY+requestPOST"/>
+<role rolename="INTRADAY+requestGET"/>
+<user username="admin" password="admin" roles="INTRADAY+requestGET,INTRADAY+requestPOST"/>
+</tomcat-users>
